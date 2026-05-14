@@ -8,7 +8,7 @@ const supabaseUrl = import.meta.env.SUPABASE_URL || '';
 const supabaseServiceKey = import.meta.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const resendApiKey = import.meta.env.RESEND_API_KEY || '';
 const notifyFrom = import.meta.env.NOTIFY_FROM || 'K9 Expeditions Leads <leads@k9expeditions.com>';
-const notifyTo = import.meta.env.NOTIFY_TO || 'info@k9expeditions.com';
+const notifyTo = (import.meta.env.NOTIFY_TO || 'info@k9expeditions.com,contact@k9academy.ca').split(',').map((e: string) => e.trim());
 
 const escapeHtml = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
