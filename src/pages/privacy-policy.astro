@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Privacy Policy | K9 Expeditions" description="K9 Expeditions privacy policy.">
+  <Navbar />
+
+  <section class="py-20 sm:py-28 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-neutral-900 mb-8">Privacy Policy</h1>
+
+      <div class="prose prose-neutral prose-sm max-w-none">
+        <p>K9 Expeditions ("we", "our", or "us") is committed to protecting the privacy of our clients and website visitors. This Privacy Policy explains how we collect, use, and safeguard your personal information.</p>
+
+        <h2>Information We Collect</h2>
+        <p>We may collect the following personal information when you use our website or services:</p>
+        <ul>
+          <li>Name, email address, and phone number</li>
+          <li>Information about your dog (name, breed, age, behavioral concerns)</li>
+          <li>Payment information (processed securely through third-party payment processors)</li>
+          <li>Website usage data through cookies and analytics tools</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+          <li>Respond to your inquiries and provide our services</li>
+          <li>Send you relevant communications about your dog's training or boarding</li>
+          <li>Improve our website and services</li>
+          <li>Process payments securely</li>
+        </ul>
+
+        <h2>Information Sharing</h2>
+        <p>We do not sell, trade, or rent your personal information to third parties. We may share your information with trusted service providers who assist us in operating our website and conducting our business, provided they agree to keep your information confidential.</p>
+
+        <h2>Data Security</h2>
+        <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+        <h2>Cookies</h2>
+        <p>Our website may use cookies and similar technologies to enhance your browsing experience and collect analytics data. You can control cookie settings through your browser.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <ul>
+          <li>Email: <a href="mailto:info@k9expeditions.com">info@k9expeditions.com</a></li>
+          <li>Phone: <a href="tel:6473767016">647-376-7016</a></li>
+        </ul>
+
+        <p class="text-neutral-400 text-xs mt-8">Last updated: {new Date().getFullYear()}</p>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

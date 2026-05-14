@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="About K9X | K9 Expeditions — Toronto" description="Learn what makes K9 Expeditions different. Structured leadership, appropriate activity, and safe travel for high-energy dogs in Toronto.">
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="bg-neutral-950 py-20 sm:py-28">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs tracking-widest uppercase text-k9-green font-semibold mb-4">About K9X</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight">What Makes Us Different</h1>
+      <p class="mt-6 text-lg text-neutral-400 max-w-2xl mx-auto">
+        K9 Expeditions specializes in high-energy dogs that require more than typical exercise. Without proper stimulation, these dogs develop behavioral issues and destructive tendencies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pillars -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-10">
+
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <div class="w-12 h-12 bg-k9-green/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-k9-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-neutral-900 mb-3">Improved Behaviour</h2>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            High-energy dogs need structured leadership and direction. K9 Expeditions avoids unstructured outings, instead focusing on recall training, social etiquette, and trail navigation. The behavioral improvements extend to your home environment — you'll notice a calmer, more focused dog after every session.
+          </p>
+        </div>
+
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <div class="w-12 h-12 bg-k9-green/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-k9-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-neutral-900 mb-3">Appropriate Activity</h2>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            Athletic breeds need activity matching their working nature. Our services include physical exercise, socialization with compatible dogs, and mental stimulation through terrain navigation. The result is a calmer, more balanced dog at home — because a tired dog is a good dog.
+          </p>
+        </div>
+
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <div class="w-12 h-12 bg-k9-green/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-k9-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-neutral-900 mb-3">Safe Travel</h2>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            An 80-pound unrestrained dog in a 30 mph collision creates approximately 2,400 pounds of force. K9 Expeditions takes safety seriously — we use crates, seat belts, or gates for safe transport to all trail locations. Your dog's safety is never compromised.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Anesh -->
+  <section class="py-16 sm:py-24 bg-neutral-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs tracking-widest uppercase text-k9-green font-semibold mb-2">Meet Our Trainer</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Anesh</h2>
+      <p class="text-neutral-400 leading-relaxed">
+        Anesh is the founder and head trainer at K9 Expeditions. With nearly a decade of hands-on experience, he specializes in high-energy and working breeds — the dogs that most trainers can't handle. From trail hikes to Board & Train programs, Anesh handles every inquiry personally because your dog deserves that level of care.
+      </p>
+      <div class="mt-8 flex items-center justify-center gap-4">
+        <a href="https://www.instagram.com/k9academyto/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-neutral-400 hover:text-white transition-colors text-sm">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @k9academyto
+        </a>
+        <a href="https://www.facebook.com/K9expeditions/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-neutral-400 hover:text-white transition-colors text-sm">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="mailto:info@k9expeditions.com" class="inline-flex items-center gap-2 text-neutral-400 hover:text-white transition-colors text-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20 bg-k9-green">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ready to Get Started?</h2>
+      <p class="mt-4 text-lg text-white/80">Fill out our free evaluation form and Anesh will personally review your dog's needs.</p>
+      <a href="/free-evaluation" class="mt-8 inline-flex items-center px-8 py-4 bg-white text-k9-green text-base font-bold rounded-xl hover:bg-neutral-100 transition-colors">
+        Free Evaluation
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

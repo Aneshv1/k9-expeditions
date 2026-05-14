@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Rates | K9 Expeditions — Toronto" description="K9 Expeditions rates for hiking, training, boarding, and Board & Train programs in Toronto.">
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="bg-neutral-950 py-20 sm:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs tracking-widest uppercase text-k9-green font-semibold mb-4">K9 Expeditions</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight">Rates</h1>
+      <p class="mt-6 text-lg text-neutral-400">Transparent pricing for all of our services.</p>
+    </div>
+  </section>
+
+  <!-- Rates -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+      <!-- Hiking -->
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 bg-k9-green/10 rounded-xl flex items-center justify-center text-lg">🥾</span>
+          Hiking Excursions
+        </h2>
+        <div class="bg-neutral-50 rounded-2xl border border-neutral-100 overflow-hidden">
+          <table class="w-full">
+            <tbody class="divide-y divide-neutral-100">
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">Per hike</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$55</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">5 days/week package</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$45/hike</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">Multi-dog discount (same household)</td><td class="px-6 py-4 text-sm font-bold text-k9-green text-right">20% off</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Training -->
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 bg-k9-green/10 rounded-xl flex items-center justify-center text-lg">🎓</span>
+          Dog Training
+        </h2>
+        <div class="bg-neutral-50 rounded-2xl border border-neutral-100 overflow-hidden">
+          <table class="w-full">
+            <tbody class="divide-y divide-neutral-100">
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">Single session (1 hour)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$225</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">4-session package (1 hour each)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$625</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">6-session behaviour modification package</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$805</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">8-session behaviour modification & off-leash</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$980</td></tr>
+            </tbody>
+          </table>
+          <div class="px-6 py-3 bg-neutral-100 text-xs text-neutral-500">
+            E-collar costs an additional $240 for behaviour modification and off-leash packages.
+          </div>
+        </div>
+      </div>
+
+      <!-- Boarding -->
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 bg-k9-green/10 rounded-xl flex items-center justify-center text-lg">🏠</span>
+          Boarding
+          <span class="text-xs bg-neutral-200 text-neutral-600 rounded-full px-3 py-1 font-medium ml-2">Previously trained clients only</span>
+        </h2>
+        <div class="bg-neutral-50 rounded-2xl border border-neutral-100 overflow-hidden">
+          <table class="w-full">
+            <tbody class="divide-y divide-neutral-100">
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">Per night (7 nights or fewer)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$70</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">Per night (8+ nights)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$60</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">Multi-dog discount (same household)</td><td class="px-6 py-4 text-sm font-bold text-k9-green text-right">20% off</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">Pick-up/drop-off (1+ hours outside GTA)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$50</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Board & Train -->
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 bg-k9-green/10 rounded-xl flex items-center justify-center text-lg">⭐</span>
+          Board and Train
+        </h2>
+        <div class="bg-neutral-50 rounded-2xl border border-neutral-100 overflow-hidden">
+          <table class="w-full">
+            <tbody class="divide-y divide-neutral-100">
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">2 weeks (training tools included)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$2,195</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">4 weeks (training tools included)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$3,195</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">6 weeks (training tools included)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$3,795</td></tr>
+              <tr><td class="px-6 py-4 text-sm text-neutral-700">8 weeks (training tools included)</td><td class="px-6 py-4 text-sm font-bold text-neutral-900 text-right">$4,195</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20 bg-k9-green">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ready to Get Started?</h2>
+      <p class="mt-4 text-lg text-white/80">Fill out a free evaluation and we'll recommend the right program for your dog.</p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/free-evaluation" class="inline-flex items-center px-8 py-4 bg-white text-k9-green text-base font-bold rounded-xl hover:bg-neutral-100 transition-colors">
+          Free Evaluation
+        </a>
+        <a href="tel:6473767016" class="inline-flex items-center px-8 py-4 border-2 border-white text-white text-base font-semibold rounded-xl hover:bg-white/10 transition-colors">
+          Call 647-376-7016
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

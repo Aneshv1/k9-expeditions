@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="In-Home Dog Boarding | K9 Expeditions — Toronto" description="Safe, structured in-home boarding in Toronto. 100% supervised, multiple cameras, daily training sessions. Trusted for nearly 10 years.">
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="bg-neutral-950 py-20 sm:py-28">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs tracking-widest uppercase text-k9-green font-semibold mb-4">K9 Expeditions</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight">In-Home Boarding</h1>
+      <p class="mt-6 text-lg text-neutral-400 max-w-2xl mx-auto">
+        K9 Expeditions has provided in-home boarding since inception. We have been trusted for nearly 10 years with dogs rejected by every other boarding facility. Safety and structure are our top priorities.
+      </p>
+      <a href="/free-evaluation" class="mt-8 inline-flex items-center px-8 py-4 bg-k9-green text-white text-base font-bold rounded-xl hover:bg-k9-green-dark transition-all shadow-lg shadow-k9-green/20">
+        Book Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Safety & Activities -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10">
+
+        <!-- Safety -->
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <h2 class="text-2xl font-bold text-neutral-900 mb-6">Safety Measures</h2>
+          <ul class="space-y-4">
+            {[
+              'New dogs are introduced via place command without physical contact until they are comfortable',
+              'All dogs are walked in heel command',
+              'Dogs are either 100% supervised or will be in a crate — crate-free boarding is dangerous',
+              'Multiple home cameras for monitoring safety at all times',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-k9-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                </svg>
+                <span class="text-sm text-neutral-600 leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Daily Activities -->
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <h2 class="text-2xl font-bold text-neutral-900 mb-6">Daily Activities</h2>
+          <ul class="space-y-4">
+            {[
+              'Socialization with similarly-energetic dogs in a structured environment',
+              'K9X hiking outings on trails (off-leash trained dogs only)',
+              'Multiple daily training sessions with noted behavioral improvements',
+              'Structured walks with fetch and tug of war games',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-k9-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                <span class="text-sm text-neutral-600 leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Notes -->
+  <section class="py-16 sm:py-24 bg-neutral-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-neutral-900 mb-6 text-center">Important Notes</h2>
+      <div class="bg-white rounded-2xl p-8 border border-neutral-200 space-y-4">
+        <div class="flex items-start gap-3">
+          <span class="text-k9-accent font-bold text-lg">!</span>
+          <p class="text-sm text-neutral-600 leading-relaxed">Dogs that are not crate-trained will be charged board-and-train fees, as additional work is required to ensure their safety and comfort.</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-k9-accent font-bold text-lg">!</span>
+          <p class="text-sm text-neutral-600 leading-relaxed">Crate escape artists require a $100 refundable security deposit.</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-k9-accent font-bold text-lg">!</span>
+          <p class="text-sm text-neutral-600 leading-relaxed">Payment is required upfront to secure your reservation.</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-k9-accent font-bold text-lg">!</span>
+          <p class="text-sm text-neutral-600 leading-relaxed">Boarding is available for previously trained clients only.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="py-16 sm:py-24 bg-neutral-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex items-center justify-center gap-0.5 mb-4">
+        {[1,2,3,4,5].map(() => (
+          <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
+        ))}
+      </div>
+      <p class="text-lg text-neutral-300 leading-relaxed italic">
+        "We left Tayto for a week with Anesh and couldn't be happier with the service. Tayto came home calmer and better behaved."
+      </p>
+      <p class="mt-4 text-neutral-500">— Claudia Perez</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20 bg-k9-green">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Book Your Dog's Stay</h2>
+      <p class="mt-4 text-lg text-white/80">Get in touch and we'll set up your dog's boarding experience.</p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/free-evaluation" class="inline-flex items-center px-8 py-4 bg-white text-k9-green text-base font-bold rounded-xl hover:bg-neutral-100 transition-colors">
+          Book Now
+        </a>
+        <a href="/rates" class="inline-flex items-center px-8 py-4 border-2 border-white text-white text-base font-semibold rounded-xl hover:bg-white/10 transition-colors">
+          View Rates
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

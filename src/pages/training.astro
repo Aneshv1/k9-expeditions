@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Dog Training & Behaviour Modification | K9 Expeditions — Toronto" description="Puppy training, behaviour modification, off-leash training and Board & Train programs in Toronto. Immediate results from expert trainers.">
+  <Navbar />
+
+  <!-- Hero -->
+  <section class="bg-neutral-950 py-20 sm:py-28">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs tracking-widest uppercase text-k9-green font-semibold mb-4">K9 Expeditions Training</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight">Training and Behaviour Modification</h1>
+      <p class="mt-6 text-lg text-neutral-400 max-w-2xl mx-auto">
+        Tired of your dog pulling you around on leash, barking at everything and not listening? Our behaviour experts will transform your dog into a happy, balanced and well-behaved family member — with immediate results.
+      </p>
+      <a href="/free-evaluation" class="mt-8 inline-flex items-center px-8 py-4 bg-k9-green text-white text-base font-bold rounded-xl hover:bg-k9-green-dark transition-all shadow-lg shadow-k9-green/20">
+        Book Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10">
+
+        <!-- Puppy Training -->
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <h2 class="text-2xl font-bold text-neutral-900 mb-4">Puppy Training & Socialization</h2>
+          <p class="text-sm text-neutral-600 leading-relaxed mb-4">
+            Puppies need exposure to 150 other dogs and humans during their critical development period. Our program covers potty training, basic obedience, and proper socialization.
+          </p>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            Most common behavioral issues in adult dogs stem from inadequate early exposure. Start right — before bad habits form.
+          </p>
+          <a href="/rates" class="mt-6 inline-flex items-center text-k9-green text-sm font-semibold hover:underline">View rates &rarr;</a>
+        </div>
+
+        <!-- Problem Behaviours -->
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <h2 class="text-2xl font-bold text-neutral-900 mb-4">Problem Behaviours</h2>
+          <p class="text-sm text-neutral-600 leading-relaxed mb-4">
+            Dogs that pull on leash, jump on people, or don't listen need structured training — not more treats. Our program focuses on teaching calmness and impulse control regardless of the situation.
+          </p>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            Whether it's reactivity, aggression, or simply ignoring commands, we address the root cause — not just the symptoms.
+          </p>
+          <a href="/rates" class="mt-6 inline-flex items-center text-k9-green text-sm font-semibold hover:underline">View rates &rarr;</a>
+        </div>
+
+        <!-- Off-Leash Training -->
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <h2 class="text-2xl font-bold text-neutral-900 mb-4">Off-Leash Training</h2>
+          <p class="text-sm text-neutral-600 leading-relaxed mb-4">
+            <strong>The K9X specialty.</strong> Advanced training so your dog remains reliable despite distractions. Off-leash freedom at the park, on trails, and in everyday life.
+          </p>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            This is what sets us apart — reliable recall and obedience even in high-distraction environments.
+          </p>
+          <a href="/rates" class="mt-6 inline-flex items-center text-k9-green text-sm font-semibold hover:underline">View rates &rarr;</a>
+        </div>
+
+        <!-- Board and Train -->
+        <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
+          <h2 class="text-2xl font-bold text-neutral-900 mb-4">Board and Train</h2>
+          <p class="text-sm text-neutral-600 leading-relaxed mb-4">
+            If your dog has several behavioural challenges that you would like to address and fix without doing much work yourself, you can send your dog to our home. We handle everything.
+          </p>
+          <p class="text-sm text-neutral-600 leading-relaxed mb-4">
+            Issues we address: separation anxiety, aggression, potty training problems, fear, leash issues, and territorial behavior.
+          </p>
+          <h3 class="text-sm font-bold text-neutral-900 mb-2">Skills Taught During Board & Train:</h3>
+          <ul class="space-y-1.5 text-sm text-neutral-600">
+            {[
+              'Healthy social interaction',
+              'Food manners and behavior',
+              'Sit, stay, place commands',
+              'Heel / leash walking',
+              'Potty training',
+              'Advanced off-leash obedience',
+            ].map((skill) => (
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-k9-green flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                {skill}
+              </li>
+            ))}
+          </ul>
+          <a href="/rates" class="mt-6 inline-flex items-center text-k9-green text-sm font-semibold hover:underline">View rates &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20 bg-k9-green">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Start Your Dog's Transformation</h2>
+      <p class="mt-4 text-lg text-white/80">Fill out our free evaluation and our trainers will recommend the right program for your dog.</p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/free-evaluation" class="inline-flex items-center px-8 py-4 bg-white text-k9-green text-base font-bold rounded-xl hover:bg-neutral-100 transition-colors">
+          Free Evaluation
+        </a>
+        <a href="tel:6473767016" class="inline-flex items-center px-8 py-4 border-2 border-white text-white text-base font-semibold rounded-xl hover:bg-white/10 transition-colors">
+          Call 647-376-7016
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
