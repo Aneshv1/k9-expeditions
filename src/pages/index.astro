@@ -58,32 +58,34 @@ import '../styles/global.css';
             title: 'Dog Training',
             desc: 'Puppy training, behaviour modification, off-leash training, and Board & Train programs. Immediate results with expert trainers.',
             href: '/training',
-            icon: '🎓',
+            img: '/images/homepage/training-service.jpg',
           },
           {
             title: 'In-Home Boarding',
             desc: 'Safe, structured boarding with 100% supervision. Multiple cameras, crate safety, and daily training sessions included.',
             href: '/boarding',
-            icon: '🏠',
+            img: '/images/homepage/boarding-service.jpg',
           },
           {
             title: 'Hiking Excursions',
             desc: 'Structured trail outings for high-energy dogs. Recall training, social etiquette, and proper mental stimulation on every hike.',
             href: '/rates',
-            icon: '🥾',
+            img: '/images/homepage/hiking-service.jpg',
           },
           {
             title: 'Free Evaluation',
             desc: 'Tell us about your dog and our trainers will review your situation and recommend the best program for your goals.',
             href: '/free-evaluation',
-            icon: '✅',
+            img: '/images/testimonials/moxie.jpg',
           },
         ].map((service) => (
-          <a href={service.href} class="group bg-neutral-50 rounded-2xl p-6 hover:bg-k9-green-light transition-colors border border-neutral-100">
-            <div class="text-3xl mb-4">{service.icon}</div>
-            <h3 class="text-lg font-bold text-neutral-900 group-hover:text-k9-green transition-colors">{service.title}</h3>
-            <p class="mt-2 text-sm text-neutral-600 leading-relaxed">{service.desc}</p>
-            <p class="mt-4 text-sm font-semibold text-k9-green">Learn more &rarr;</p>
+          <a href={service.href} class="group bg-neutral-50 rounded-2xl overflow-hidden hover:bg-k9-green-light transition-colors border border-neutral-100">
+            <img src={service.img} alt={service.title} class="w-full h-48 object-cover" loading="lazy" />
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-neutral-900 group-hover:text-k9-green transition-colors">{service.title}</h3>
+              <p class="mt-2 text-sm text-neutral-600 leading-relaxed">{service.desc}</p>
+              <p class="mt-4 text-sm font-semibold text-k9-green">Learn more &rarr;</p>
+            </div>
           </a>
         ))}
       </div>
@@ -186,6 +188,7 @@ import '../styles/global.css';
   <section class="py-16 sm:py-24 bg-neutral-50">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-xs tracking-widest uppercase text-k9-green font-semibold mb-2">Meet Our Trainer</p>
+      <img src="/images/about/anesh-profile.jpg" alt="Anesh — K9 Expeditions Founder" class="w-32 h-32 rounded-full object-cover mx-auto mb-6 border-4 border-k9-green/20" />
       <h2 class="text-3xl sm:text-4xl font-extrabold text-neutral-900 mb-6">Anesh</h2>
       <p class="text-neutral-600 leading-relaxed">
         Anesh is the founder and head trainer at K9 Expeditions. With nearly a decade of experience working with high-energy and working breeds, he specializes in dogs that other trainers won't take on. Every inquiry is handled personally — because your dog deserves that level of attention.

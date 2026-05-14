@@ -8,66 +8,79 @@ const testimonials = [
   {
     name: 'Claudia Perez',
     dog: 'Tayto',
+    img: '/images/testimonials/extra-1.jpg',
     text: 'We left Tayto for a week with Anesh and couldn\'t be happier with the service. Tayto came home calmer and better behaved.',
   },
   {
     name: 'Victoria Duong',
     dog: 'Jasper',
+    img: '/images/testimonials/jasper.jpg',
     text: 'K9 Expeditions addressed our separation anxiety concerns and we noticed improved leash behavior from the training benefits. Couldn\'t recommend them enough.',
   },
   {
     name: 'Johanna Balge',
     dog: 'Cade',
+    img: '/images/testimonials/cade.jpg',
     text: 'The safety and well being of the dogs is clearly the first priority. Amazing expertise with high-energy sporting breeds and socialization success.',
   },
   {
     name: 'Susan',
     dog: 'Luka',
+    img: '/images/testimonials/luka.jpg',
     text: 'Luka was a foster dog who successfully overcame separation anxiety, fear aggression, and leash issues before adoption. K9 Expeditions made that possible.',
   },
   {
     name: 'Linda Van Den Brink',
     dog: 'Eloise',
+    img: '/images/testimonials/eloise.jpg',
     text: 'The service is cost-comparable to daycare with significant behavioral improvements from regular hiking. Eloise comes home tired and happy every time.',
   },
   {
     name: 'Christina Jodrell',
     dog: 'Jaxson',
+    img: '/images/testimonials/jaxson.jpg',
     text: 'Our high-energy golden retriever has benefited so much — improved recall training and we get daily photo and video updates during his stays. Love it.',
   },
   {
     name: 'Mike Erhardt',
     dog: 'Kobe',
+    img: '/images/testimonials/kobe.jpg',
     text: 'We have worked with K9 Expeditions for the past 6 years. Consistent results with our high-energy dog. Wouldn\'t trust anyone else.',
   },
   {
     name: 'Jenny Woods',
     dog: 'Freddy',
+    img: '/images/testimonials/freddy.png',
     text: 'Anesh is amazing. The only person who can walk my dog off leash. We trust him completely.',
   },
   {
     name: 'Anam Khalid',
     dog: 'Hunter',
+    img: '/images/testimonials/hunter.jpg',
     text: 'Trustworthiness, flexibility, and training assistance all in one place. We relocated but would still recommend K9 Expeditions to anyone in Toronto.',
   },
   {
     name: 'Steve',
     dog: 'Buddy',
+    img: '/images/testimonials/buddy.jpg',
     text: 'Our beagle\'s training has been incredible — improved off-leash recall and impulse control after months of service. Buddy is a different dog.',
   },
   {
     name: 'Rucsandra Mitrea',
     dog: 'Merlin',
+    img: '/images/testimonials/merlin.jpg',
     text: 'The professionalism and expertise are evident. Merlin has such a strong attachment to the staff — that says everything about how they treat the dogs.',
   },
   {
     name: 'Leanne Nolet',
     dog: 'Snoopie',
+    img: '/images/testimonials/snoopie.jpg',
     text: 'Snoopie is a regular hiking participant and boarding client. Love the photo documentation of activities and the beautiful outdoor locations they visit.',
   },
   {
     name: 'Shannon Holliday',
     dog: 'Ruben & Callie',
+    img: '/images/testimonials/ruben-callie.jpg',
     text: 'We feel total comfort and confidence with K9 Expeditions handling our larger, independent dogs. They truly understand different dog personalities.',
   },
 ];
@@ -87,6 +100,7 @@ const testimonials = [
   <!-- Founder Story -->
   <section class="py-12 bg-k9-green-light">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <img src="/images/testimonials/moxie.jpg" alt="Moxie — the dog that started K9 Expeditions" class="w-28 h-28 rounded-full object-cover mx-auto mb-4 border-4 border-k9-green/20" />
       <h2 class="text-xl font-bold text-neutral-900 mb-3">Moxie's Story</h2>
       <p class="text-sm text-neutral-600 leading-relaxed">
         Moxie is the dog that started it all. Daily hiking transformed her health — she lost 20 pounds over 4 months and her energy levels improved dramatically. That transformation inspired K9 Expeditions.
@@ -99,7 +113,9 @@ const testimonials = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {testimonials.map((t) => (
-          <div class="bg-neutral-50 rounded-2xl p-6 border border-neutral-100">
+          <div class="bg-neutral-50 rounded-2xl overflow-hidden border border-neutral-100">
+            <img src={t.img} alt={t.dog} class="w-full h-48 object-cover" loading="lazy" />
+            <div class="p-6">
             <div class="flex items-center gap-0.5 mb-3">
               {[1,2,3,4,5].map(() => (
                 <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
@@ -109,6 +125,7 @@ const testimonials = [
             </div>
             <p class="text-sm text-neutral-600 leading-relaxed italic">"{t.text}"</p>
             <p class="mt-3 text-sm font-semibold text-neutral-900">{t.name} <span class="text-neutral-400 font-normal">&middot; {t.dog}</span></p>
+            </div>
           </div>
         ))}
       </div>
